@@ -21,51 +21,62 @@
 //
 
 import Foundation
-import PSOperations
+import ProcedureKit
 import Swiftification
 
+/// Communicates with the authentication service.
+///
 /// Instances are lightweight; construct a new instance whenever the user's credentials change.
 open class AuthenticatedSession: NSObject {
     
-    open let authenticationStatusObservers = ObserverSet<AuthenticationStatus>()
+    public let networkActivityObservers = ObserverSet<NetworkActivity>()
+    
+    public enum NetworkActivity {
+        case start
+        case stop
+    }
     
     /// The username used to authenticate this session.
-    open let username: String
+    public let username: String
     
     /// The password used to authenticate this session.
-    open let password: String
+    public let password: String
     
-    open let authenticationURL: URL?
-    open let domain: String
-    let trustPolicy: TrustPolicy
+    public let userAgent: String
+    public let clientVersion: String
+    public let clientUsername: String
+    public let clientPassword: String
+    public let authenticationURL: URL?
+    public let domain: String
+    public let trustPolicy: TrustPolicy
     
-    public enum AuthenticationStatus {
-        case unauthenticated
-        case authenticationInProgress
-        case authenticationSuccessful
-        case authenticationFailed
+    static let sessionCookieName = "ObSSOCookie"
+    var sessionCookieValue: String?
+    
+    public var obSSOCookieHeader: (name: String, value: String)? {
+        guard let sessionCookieValue = sessionCookieValue else { return nil }
+        return (name: "Cookie", value: String(format: "%@=%@", AuthenticatedSession.sessionCookieName, sessionCookieValue))
     }
     
-    open var authenticationStatus: AuthenticationStatus = .unauthenticated {
-        didSet {
-            authenticationStatusObservers.notify(authenticationStatus)
-        }
-    }
-    
-    /// Constructs a session.
-    public init(username: String, password: String, authenticationURL: URL? = URL(string: "https://beta.lds.org/login.html"), domain: String = "beta.lds.org", trustPolicy: TrustPolicy = .trust) {
+      /// Constructs a session.
+    public init(username: String, password: String, userAgent: String, clientVersion: String, clientUsername: String, clientPassword: String, authenticationURL: URL? = URL(string: "https://www.lds.org/login.html"), domain: String = "beta.lds.org", trustPolicy: TrustPolicy = .trust) {
         self.username = username
         self.password = password
+        self.userAgent = userAgent
+        self.clientVersion = clientVersion
+        self.clientUsername = clientUsername
+        self.clientPassword = clientPassword
         self.authenticationURL = authenticationURL
         self.domain = domain
         self.trustPolicy = trustPolicy
     }
     
-    open lazy var urlSession: Foundation.URLSession = {
-        return Foundation.URLSession(configuration: URLSessionConfiguration.default, delegate: self, delegateQueue: nil)
+    public lazy var urlSession: Foundation.URLSession = {
+        return URLSession(configuration: URLSessionConfiguration.default, delegate: self, delegateQueue: nil)
     }()
     
-    open let operationQueue = OperationQueue()
+    let procedureQueue = ProcedureQueue()
+    private let dataQueue = DispatchQueue(label: "LDSAnnotations.session.syncqueue", attributes: [])
     
     var lastSuccessfulAuthenticationDate: Date?
     
@@ -79,14 +90,12 @@ open class AuthenticatedSession: NSObject {
     }
     
     /// Authenticates against the server.
-    open func authenticate(_ completion: @escaping (NSError?) -> Void) {
-        authenticationStatus = .authenticationInProgress
+    public func authenticate(_ completion: @escaping (Error?) -> Void) {
         let operation = AuthenticateOperation(session: self)
-        operation.addObserver(BlockObserver(startHandler: nil, produceHandler: nil) { operation, errors in
-            self.authenticationStatus = errors.isEmpty ? .AuthenticationSuccessful : .AuthenticationFailed
+        operation.add(observer: BlockObserver(didFinish: { operation, errors in
             completion(errors.first)
-        })
-        operationQueue.addOperation(operation)
+        }))
+        procedureQueue.addOperation(operation)
     }
     
 }

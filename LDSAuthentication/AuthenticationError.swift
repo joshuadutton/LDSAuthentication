@@ -20,7 +20,25 @@
 // THE SOFTWARE.
 //
 
-#import <UIKit/UIKit.h>
+import Foundation
 
-FOUNDATION_EXPORT double LDSAuthenticationVersionNumber;
-FOUNDATION_EXPORT const unsigned char LDSAuthenticationVersionString[];
+public struct AuthenticationError {
+    
+    public static let Domain = "com.crosswaterbridge.LDSAnnotations"
+    
+    public enum Code: Int {
+        case missingURL = -1000
+        case malformedAuthenticationDomain = -1001
+        case malformedParameter = -1002
+        case unknown = -1003
+        case authenticationFailed = -1004
+        case lockedOut = -1005
+        case passwordExpired = -1006
+    }
+    
+    static func errorWithCode(_ code: AuthenticationError.Code, failureReason: String) -> NSError {
+        let userInfo = [NSLocalizedFailureReasonErrorKey: failureReason]
+        return NSError(domain: AuthenticationError.Domain, code: code.rawValue, userInfo: userInfo)
+    }
+    
+}

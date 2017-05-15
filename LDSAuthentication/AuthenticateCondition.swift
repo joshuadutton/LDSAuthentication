@@ -23,11 +23,11 @@
 import Foundation
 import ProcedureKit
 
-class AuthenticateCondition: Condition {
+public class AuthenticateCondition: Condition {
     
-    let session: Session
+    let session: AuthenticatedSession
     
-    init(session: Session) {
+    public init(session: AuthenticatedSession) {
         self.session = session
         super.init()
         name = "Authenticate"
@@ -35,11 +35,11 @@ class AuthenticateCondition: Condition {
         addDependency(AuthenticateOperation(session: session))
     }
     
-    override func evaluate(_ procedure: Procedure, completion: @escaping (ConditionResult) -> Void) {
+    public override func evaluate(procedure: Procedure, completion: @escaping (ConditionResult) -> Void) {
         if session.authenticated {
             completion(.satisfied)
         } else {
-            completion(.failed(AnnotationError.errorWithCode(.unknown, failureReason: "Not authenticated")))
+            completion(.failed(AuthenticationError.errorWithCode(.unknown, failureReason: "Not authenticated")))
         }
     }
     

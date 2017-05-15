@@ -25,9 +25,9 @@ import ProcedureKit
 
 class AuthenticateOperation: Procedure {
     
-    let session: Session
+    let session: AuthenticatedSession
     
-    init(session: Session) {
+    init(session: AuthenticatedSession) {
         self.session = session
         
         super.init()
@@ -42,7 +42,7 @@ class AuthenticateOperation: Procedure {
         }
         
         guard let url = session.authenticationURL else {
-            finish(withError: AnnotationError.errorWithCode(.unknown, failureReason: "Missing authentication URL"))
+            finish(withError: AuthenticationError.errorWithCode(.unknown, failureReason: "Missing authentication URL"))
             return
         }
         
@@ -55,7 +55,7 @@ class AuthenticateOperation: Procedure {
             HTTPCookiePropertyKey.path : "/login.html",
             HTTPCookiePropertyKey.expires: Date(timeIntervalSinceNow: 60 * 60),
         ]) else {
-            finish(withError: AnnotationError.errorWithCode(.unknown, failureReason: "Malformed authentication domain"))
+            finish(withError: AuthenticationError.errorWithCode(.unknown, failureReason: "Malformed authentication domain"))
             return
         }
         request.allHTTPHeaderFields = HTTPCookie.requestHeaderFields(with: [cookie])
@@ -70,7 +70,7 @@ class AuthenticateOperation: Procedure {
         ].map({ key, value in
             return "\(key)=\(value.stringByAddingPercentEscapesForQueryValue()!)"
         }).joined(separator: "&").data(using: String.Encoding.utf8) else {
-            finish(withError: AnnotationError.errorWithCode(.unknown, failureReason: "Malformed parameter"))
+            finish(withError: AuthenticationError.errorWithCode(.unknown, failureReason: "Malformed parameter"))
             return
         }
         
@@ -87,14 +87,14 @@ class AuthenticateOperation: Procedure {
             }
             
             guard let httpResponse = response as? HTTPURLResponse, let responseHeaderFields = httpResponse.allHeaderFields as? [String: String], let responseURL = httpResponse.url else {
-                self.finish(withError: AnnotationError.errorWithCode(.unknown, failureReason: "Unexpected response"))
+                self.finish(withError: AuthenticationError.errorWithCode(.unknown, failureReason: "Unexpected response"))
                 return
             }
             
             let cookies = HTTPCookie.cookies(withResponseHeaderFields: responseHeaderFields, for: responseURL)
             if cookies.contains(where: { $0.name == "ObFormLoginCookie" && $0.value == "done" }) {
                 self.session.lastSuccessfulAuthenticationDate = authenticationDate
-                self.session.sessionCookieValue = cookies.find(where: { $0.name == Session.sessionCookieName })?.value
+                self.session.sessionCookieValue = cookies.find(where: { $0.name == AuthenticatedSession.sessionCookieName })?.value
                 self.finish()
                 return
             }
@@ -108,13 +108,13 @@ class AuthenticateOperation: Procedure {
             
             switch errorKey {
             case "authfailed":
-                self.finish(withError: AnnotationError.errorWithCode(.authenticationFailed, failureReason: "Incorrect username and/or password."))
+                self.finish(withError: AuthenticationError.errorWithCode(.authenticationFailed, failureReason: "Incorrect username and/or password."))
             case "lockout":
-                self.finish(withError: AnnotationError.errorWithCode(.lockedOut, failureReason: "Account is locked."))
+                self.finish(withError: AuthenticationError.errorWithCode(.lockedOut, failureReason: "Account is locked."))
             case "pwdexpired":
-                self.finish(withError: AnnotationError.errorWithCode(.passwordExpired, failureReason: "Password is expired."))
+                self.finish(withError: AuthenticationError.errorWithCode(.passwordExpired, failureReason: "Password is expired."))
             default:
-                self.finish(withError: AnnotationError.errorWithCode(.unknown, failureReason: "Authentication failed for an unknown reason."))
+                self.finish(withError: AuthenticationError.errorWithCode(.unknown, failureReason: "Authentication failed for an unknown reason."))
             }
         }) 
         session.networkActivityObservers.notify(.start)

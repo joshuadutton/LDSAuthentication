@@ -6,12 +6,11 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/CrossWaterBridge/LDSAuthentication"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.source       = { :git => "https://github.com/CrossWaterBridge/LDSAuthentication.git", :tag => s.version.to_s }
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
   s.osx.deployment_target = '10.11'
-  s.tvos.deployment_target = '9.0'
   s.source_files = 'LDSAuthentication/*.swift'
   s.requires_arc = true
-  
-  s.dependency 'PSOperations'
-  s.dependency 'Swiftification'  
+  s.dependency 'ProcedureKit', '4.0.0-beta.4'
+  s.dependency 'Locksmith' 
+  s.dependency 'Swiftification' 
 end
