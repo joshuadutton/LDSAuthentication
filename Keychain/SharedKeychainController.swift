@@ -22,13 +22,13 @@
 
 import Foundation
 import Locksmith
-import Swiftification
 
 public class SharedKeychainController {
     
     public static let shared = SharedKeychainController()
-    static let serviceName = "org.lds.account"
-    static let userAccountName = "credentials"
+    
+    fileprivate static let serviceName = "org.lds.account"
+    fileprivate static let userAccountName = "credentials"
     
     public struct Account {
         let username: String
