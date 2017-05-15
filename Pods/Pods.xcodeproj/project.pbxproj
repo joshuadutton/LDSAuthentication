@@ -1,0 +1,1271 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		006E33F2D4BBF271402C802F0EED9A32 /* Dictionary_Initializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D719E7E3311208B2CD5C3FE0A5767C /* Dictionary_Initializers.swift */; };
+		03C3DEC60013579981EBACAA2E2F4AE7 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1219745321909513E3D009F61CC43DEA /* Map.swift */; };
+		0438E33560D691103963318F98F02BCA /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52352209DB8DA3288AF6077AA0A70173 /* Delay.swift */; };
+		06F9C5765659D1CED6C2C2A9920BCA0B /* Procedure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4934E85B0A9E5CC34D30CC613FB3107D /* Procedure.swift */; };
+		0F194A55EE4CA4B5BF8F260F645B3080 /* TimeoutObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D480DF10035857B3808DA712D46581 /* TimeoutObserver.swift */; };
+		106B0ECDDBB11AAFFAEE2EE2A10E888B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */; };
+		10C4523484A3BEDF9E8A158C3B77CB90 /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248AB2DAB0313436F5A976133FCA148D /* Transform.swift */; };
+		17DA94842A64017B7023B4ADF333D042 /* AnyObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421C943FEBDC5A4630C8CD97131B9CE5 /* AnyObserver.swift */; };
+		17E6ACB1E8136789999C53B146EC06DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */; };
+		1F0855EF3FCF0EFE13C50CA329A2156B /* LocksmithAccessibleOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16996210FC3C2D1189F4AFDC1CAEC7E /* LocksmithAccessibleOption.swift */; };
+		254964D8C06D019093297E0CABE8DBF3 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571F71F3AFDBE6A537363B2AF5F040EF /* Block.swift */; };
+		27D889D317A485E463FE504E54F451FF /* Locksmith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC52A3B670DAA0B5CB665D3B4E82A3 /* Locksmith.swift */; };
+		29155783B26F5EE0ADC286881993F752 /* Any.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710E9EE643D3C198B197362292ED85C6 /* Any.swift */; };
+		29D0F4025D300C1EE8DA5E24A9DC5EB5 /* Pods-LDSAuthentication-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F8794ED0B834E9B6D360EB323D1D55DE /* Pods-LDSAuthentication-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D1FC944D503C6DAA12DD3F11AC0A9CC /* DispatchQueue+ProcedureKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D47543FF04B767055F683CAE898AC43 /* DispatchQueue+ProcedureKit.swift */; };
+		32E2BD113DF1D266C91A8F98707FC846 /* ProcedureProcotol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB45DA8868A7B3DE0A66A2DD4199036B /* ProcedureProcotol.swift */; };
+		37708F1595CDF3FBBBBA3F85C0966E5F /* SilentCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B30F26E4569EF4336E3034FD60D3B9 /* SilentCondition.swift */; };
+		38B435EC63B204A1CDEEC7387784F0B7 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B9B1DC2C817C17419D409C624EB1FF /* Logging.swift */; };
+		3A18AE56C3BEDCD130DDEFC2AE7517BE /* ProcedureKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 851A5287BA7782AEE649E209F066726D /* ProcedureKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46F0C1A4D462EB6CB336573EA976FD66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */; };
+		5577623B238FB92B26E93DB6F86A4047 /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D1B380CF09EA7C929BCBEC9EBC4B3F /* Identity.swift */; };
+		5839665813229153C1352C9DD41F57C2 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACFB3107A4AC6C81433153F45AC1A97 /* Errors.swift */; };
+		6140CC269F4EEEA4B98EB4E17C675751 /* BlockCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13642203300B867DEBC8A79509DB54ED /* BlockCondition.swift */; };
+		6B5AD3B76B46F59C4A6025C75B0DDF02 /* NegatedCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7B3B3EC787F5C3A25FFCB1A4AA34EF /* NegatedCondition.swift */; };
+		7080F8EA8DA2DA0AB5195FFF4ABB63D7 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9AE1A5CCB973219978DA5B5C732F5F /* Group.swift */; };
+		78B2338EFDF22FFA6575BA90469BEB29 /* Locksmith-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C864513897767DC51438F0FA553DE284 /* Locksmith-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7ECE496DF5E580B1107C8B1CA004D5F4 /* MutualExclusion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7A4D2E9BCAC3F3002EC631E19ADE6B /* MutualExclusion.swift */; };
+		7FBDA22BC8E282470B033630D9E5210F /* LocksmithSecurityClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8582D7312DF85B0DE8E2BE08E72ED97 /* LocksmithSecurityClass.swift */; };
+		80DC0F5540DDB561E534D6FF4D74204C /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4475517DA29BBCAB860CD535251AF951 /* Filter.swift */; };
+		8343583754E1C02D7713C2D069CC4CDA /* Composed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616D34DBAB4E7AFD0658B22CC9EA283E /* Composed.swift */; };
+		87866619914ED78E31B92C81C6F2E306 /* ProcedureQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A73EB3E8AF0C92DB8F2E5BD377C28CF /* ProcedureQueue.swift */; };
+		880DCCEA2853583F85F31137EB54DFA6 /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF3506A624E201D1315D2E717C0989E /* Condition.swift */; };
+		897DB1AA7832CCF9FD7D3B6E5B3354B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */; };
+		8CC4A8C096A3901A7EBD2B59A0F3B443 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */; };
+		8D3BB10C30B780347AAB0ECB7895FF2F /* LocksmithError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7C0356B44E36DD557EC21D2A78FDFF /* LocksmithError.swift */; };
+		8EB8A625133C93559081A6921537C3BE /* ProcedureKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2545F5DDF69CCF56FFD0205C44E662 /* ProcedureKit-dummy.m */; };
+		8FA9B26AA518B65A03682A1781E2B4D1 /* Locksmith.h in Headers */ = {isa = PBXBuildFile; fileRef = B789AE63B2233D830AED55793A66F252 /* Locksmith.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91AD45B427E4480C4D958A58666D789E /* LocksmithInternetAuthenticationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531B6EB5FD59E1AF94F840A94524BDDA /* LocksmithInternetAuthenticationType.swift */; };
+		9E82A605980868A5CFEE10C7771932FC /* Reduce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4353D9896F204971F7E0C00E04E86C2B /* Reduce.swift */; };
+		A01159AB2FD5C79906F7D902AA599BC8 /* ResultInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6654EC2DC455DD77701F895D742658 /* ResultInjection.swift */; };
+		A52A22E60D090C080A1E652F3C8B2503 /* Repeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982C7488AFC394159882723D56BDE735 /* Repeat.swift */; };
+		A6739D6E2FD6A0E6165254AD2D424B37 /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D8246831A2E2660468B48D011CCF69 /* Support.swift */; };
+		ACDE90DC6E9F939AA6745DB264EEAF07 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C085E02FF89804F50ADDA04F5A586E94 /* Security.framework */; };
+		B702E6C018A83606D7938916C8FEE794 /* Collection+ProcedureKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B13E0C66017CC18C12CC74DC7054DD /* Collection+ProcedureKit.swift */; };
+		B875F14E78DB15D8C4D65BB69E55BA04 /* Locksmith-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFBF58D87F447C8C8A593998AA9AAAB /* Locksmith-dummy.m */; };
+		BD1BB106BB2A88A02AEA84D301BA0D7E /* Pods-LDSAuthentication-LDSAuthenticationTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA0C6A8CBCEA08A034C41C4D420A5F2 /* Pods-LDSAuthentication-LDSAuthenticationTests-dummy.m */; };
+		CAA418DF1176F5AA55E12FBAB8860CED /* LocksmithInternetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D570D6AD3E9349A640A02ECBE9737453 /* LocksmithInternetProtocol.swift */; };
+		CD5E2C36D46C8A2079A2833DABE48A23 /* BlockObservers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2E84647E56674FD6A221C44B52D4BD /* BlockObservers.swift */; };
+		D31B5A465CFA2900FDE6783C9EE7B202 /* Pods-LDSAuthentication-LDSAuthenticationTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3002E4E4DEEF1D78F62013DCB386E152 /* Pods-LDSAuthentication-LDSAuthenticationTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D421E7A80EFE5ACE15FE53C58A2A1F98 /* ProcedureObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823240300F0F80A2FE7E4EBD98009315 /* ProcedureObserver.swift */; };
+		D7D6A7E4539A81FD1F54FCAD3C7464A1 /* Retry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A113F8A99398239FC30EC02A653A9084 /* Retry.swift */; };
+		DFAE6DB61E45E8FC2B503E5185E8364C /* Pods-LDSAuthentication-LDSAuthenticationDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81129E6553FBC2B26D4F85ADA31C2538 /* Pods-LDSAuthentication-LDSAuthenticationDemo-dummy.m */; };
+		E1C10901A24F99C4C32D52C9184A211B /* Capability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489E04C59897F4447AAE7CCDA46F9249 /* Capability.swift */; };
+		E6F2A81BC44F3BEA1BC92C9A47EFF4A1 /* Pods-LDSAuthentication-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A832FA82E6A0B5AB1D1CA20E335E3076 /* Pods-LDSAuthentication-dummy.m */; };
+		F3329AD58B119537898F9C77DB243417 /* Operation+ProcedureKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0ED0C914452E1D7443D8FAB7F83150 /* Operation+ProcedureKit.swift */; };
+		FA6F2D640A2B5BA821E20584EC6B6714 /* Pods-LDSAuthentication-LDSAuthenticationDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 517BB393D518D6A3D7DEB56B0EC0F03D /* Pods-LDSAuthentication-LDSAuthenticationDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAFD1ED6BD639FA87994B15A6A4896F3 /* NoFailedDependenciesCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69474B42E48A13EBEB7A91132772485 /* NoFailedDependenciesCondition.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		137651A57C830D49375AF2C1A7621346 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7F727D48928BF47D913AFC48BB6A978;
+			remoteInfo = Locksmith;
+		};
+		14166B1B8557F522E47441E0F24FF84D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7F727D48928BF47D913AFC48BB6A978;
+			remoteInfo = Locksmith;
+		};
+		89AC840ABEC2A2C9B2FFF871EC829963 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7F727D48928BF47D913AFC48BB6A978;
+			remoteInfo = Locksmith;
+		};
+		BE75D57F607979F5A702E65F8266E5C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA2A1A122B7881B39A494156C5713589;
+			remoteInfo = ProcedureKit;
+		};
+		EB7DFB6C0E991862A8BD5DC9D878E2BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA2A1A122B7881B39A494156C5713589;
+			remoteInfo = ProcedureKit;
+		};
+		FD2285D4ADC900792F96E048A623CC00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA2A1A122B7881B39A494156C5713589;
+			remoteInfo = ProcedureKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0076C3C17978A391F836C4BC047CDD8F /* Pods-LDSAuthentication-LDSAuthenticationDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LDSAuthentication-LDSAuthenticationDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		0AF921EA3087782965C05F1CE4644610 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FDCB0774A79B63DCA7C4AD7CC7C077B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1219745321909513E3D009F61CC43DEA /* Map.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Map.swift; path = Sources/Map.swift; sourceTree = "<group>"; };
+		13642203300B867DEBC8A79509DB54ED /* BlockCondition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockCondition.swift; path = Sources/BlockCondition.swift; sourceTree = "<group>"; };
+		13B13E0C66017CC18C12CC74DC7054DD /* Collection+ProcedureKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Collection+ProcedureKit.swift"; path = "Sources/Collection+ProcedureKit.swift"; sourceTree = "<group>"; };
+		1545D6CB8390DB972C1600C28F021F1E /* Locksmith.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Locksmith.xcconfig; sourceTree = "<group>"; };
+		17D1B380CF09EA7C929BCBEC9EBC4B3F /* Identity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identity.swift; path = Sources/Identity.swift; sourceTree = "<group>"; };
+		1A0ED0C914452E1D7443D8FAB7F83150 /* Operation+ProcedureKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Operation+ProcedureKit.swift"; path = "Sources/Operation+ProcedureKit.swift"; sourceTree = "<group>"; };
+		1A73EB3E8AF0C92DB8F2E5BD377C28CF /* ProcedureQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProcedureQueue.swift; path = Sources/ProcedureQueue.swift; sourceTree = "<group>"; };
+		1C7A4D2E9BCAC3F3002EC631E19ADE6B /* MutualExclusion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MutualExclusion.swift; path = Sources/MutualExclusion.swift; sourceTree = "<group>"; };
+		1FB2FB877DE227F2DE976ABA1741C13A /* Pods-LDSAuthentication-LDSAuthenticationTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LDSAuthentication-LDSAuthenticationTests.modulemap"; sourceTree = "<group>"; };
+		248AB2DAB0313436F5A976133FCA148D /* Transform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transform.swift; path = Sources/Transform.swift; sourceTree = "<group>"; };
+		25FA19BC1006005F87B5CA59B9853409 /* Pods-LDSAuthentication-LDSAuthenticationDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LDSAuthentication-LDSAuthenticationDemo.modulemap"; sourceTree = "<group>"; };
+		27F101EF9088FF0ED8D5507D9652E69B /* Pods-LDSAuthentication-LDSAuthenticationTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LDSAuthentication-LDSAuthenticationTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2C2F662DC1AC64E59AB29F291A4F26AE /* Pods-LDSAuthentication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LDSAuthentication.debug.xcconfig"; sourceTree = "<group>"; };
+		3002E4E4DEEF1D78F62013DCB386E152 /* Pods-LDSAuthentication-LDSAuthenticationTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LDSAuthentication-LDSAuthenticationTests-umbrella.h"; sourceTree = "<group>"; };
+		321B79B8203E8E0612B1FC23E3E4E22A /* Pods-LDSAuthentication-LDSAuthenticationDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LDSAuthentication-LDSAuthenticationDemo-resources.sh"; sourceTree = "<group>"; };
+		35A41B88EC348D71BED43227DDD58C76 /* Pods-LDSAuthentication-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LDSAuthentication-resources.sh"; sourceTree = "<group>"; };
+		3C46CE488271EDA16D568492AFC437A0 /* ProcedureKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ProcedureKit.framework; path = ProcedureKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FFBF58D87F447C8C8A593998AA9AAAB /* Locksmith-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Locksmith-dummy.m"; sourceTree = "<group>"; };
+		421C943FEBDC5A4630C8CD97131B9CE5 /* AnyObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyObserver.swift; path = Sources/AnyObserver.swift; sourceTree = "<group>"; };
+		4353D9896F204971F7E0C00E04E86C2B /* Reduce.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reduce.swift; path = Sources/Reduce.swift; sourceTree = "<group>"; };
+		43D719E7E3311208B2CD5C3FE0A5767C /* Dictionary_Initializers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dictionary_Initializers.swift; path = Source/Dictionary_Initializers.swift; sourceTree = "<group>"; };
+		4475517DA29BBCAB860CD535251AF951 /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/Filter.swift; sourceTree = "<group>"; };
+		489E04C59897F4447AAE7CCDA46F9249 /* Capability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Capability.swift; path = Sources/Capability.swift; sourceTree = "<group>"; };
+		4934E85B0A9E5CC34D30CC613FB3107D /* Procedure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Procedure.swift; path = Sources/Procedure.swift; sourceTree = "<group>"; };
+		4ACFB3107A4AC6C81433153F45AC1A97 /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = Sources/Errors.swift; sourceTree = "<group>"; };
+		4C74E834E1D67EAFFE7A3FE60D1CC46B /* Pods-LDSAuthentication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LDSAuthentication.release.xcconfig"; sourceTree = "<group>"; };
+		4CFA3051CFCBF683A25A5B236BBE7139 /* Pods-LDSAuthentication-LDSAuthenticationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LDSAuthentication-LDSAuthenticationDemo.release.xcconfig"; sourceTree = "<group>"; };
+		4F8CDC9BCE0453F380DD8A96EC3ADED1 /* Pods_LDSAuthentication_LDSAuthenticationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LDSAuthentication_LDSAuthenticationTests.framework; path = "Pods-LDSAuthentication-LDSAuthenticationTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		517BB393D518D6A3D7DEB56B0EC0F03D /* Pods-LDSAuthentication-LDSAuthenticationDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LDSAuthentication-LDSAuthenticationDemo-umbrella.h"; sourceTree = "<group>"; };
+		52352209DB8DA3288AF6077AA0A70173 /* Delay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Delay.swift; path = Sources/Delay.swift; sourceTree = "<group>"; };
+		531B6EB5FD59E1AF94F840A94524BDDA /* LocksmithInternetAuthenticationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocksmithInternetAuthenticationType.swift; path = Source/LocksmithInternetAuthenticationType.swift; sourceTree = "<group>"; };
+		54E7B18BC012A49D944BB8D48EADBF13 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54EAF14EEC6A6049F7F3A1296F8B5472 /* Pods_LDSAuthentication_LDSAuthenticationDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LDSAuthentication_LDSAuthenticationDemo.framework; path = "Pods-LDSAuthentication-LDSAuthenticationDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		571F71F3AFDBE6A537363B2AF5F040EF /* Block.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Block.swift; path = Sources/Block.swift; sourceTree = "<group>"; };
+		616D34DBAB4E7AFD0658B22CC9EA283E /* Composed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Composed.swift; path = Sources/Composed.swift; sourceTree = "<group>"; };
+		61FC52A3B670DAA0B5CB665D3B4E82A3 /* Locksmith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Locksmith.swift; path = Source/Locksmith.swift; sourceTree = "<group>"; };
+		6B6654EC2DC455DD77701F895D742658 /* ResultInjection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResultInjection.swift; path = Sources/ResultInjection.swift; sourceTree = "<group>"; };
+		710E9EE643D3C198B197362292ED85C6 /* Any.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Any.swift; path = Sources/Any.swift; sourceTree = "<group>"; };
+		7401E183C5E878350DDF8AB00D2B7056 /* Pods-LDSAuthentication-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LDSAuthentication-acknowledgements.plist"; sourceTree = "<group>"; };
+		7D47543FF04B767055F683CAE898AC43 /* DispatchQueue+ProcedureKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+ProcedureKit.swift"; path = "Sources/DispatchQueue+ProcedureKit.swift"; sourceTree = "<group>"; };
+		7DF3506A624E201D1315D2E717C0989E /* Condition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Condition.swift; path = Sources/Condition.swift; sourceTree = "<group>"; };
+		7F512FC0B124CE65AD53B13EE037FA6E /* ProcedureKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ProcedureKit.xcconfig; sourceTree = "<group>"; };
+		81129E6553FBC2B26D4F85ADA31C2538 /* Pods-LDSAuthentication-LDSAuthenticationDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LDSAuthentication-LDSAuthenticationDemo-dummy.m"; sourceTree = "<group>"; };
+		823240300F0F80A2FE7E4EBD98009315 /* ProcedureObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProcedureObserver.swift; path = Sources/ProcedureObserver.swift; sourceTree = "<group>"; };
+		851A5287BA7782AEE649E209F066726D /* ProcedureKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ProcedureKit-umbrella.h"; sourceTree = "<group>"; };
+		8765F16D05345EE84F25B4EBDC7FBA0E /* Pods-LDSAuthentication-LDSAuthenticationTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LDSAuthentication-LDSAuthenticationTests-resources.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96CAA437A87DE3CB98C9D359DC53276A /* Pods-LDSAuthentication.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LDSAuthentication.modulemap"; sourceTree = "<group>"; };
+		97B30F26E4569EF4336E3034FD60D3B9 /* SilentCondition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SilentCondition.swift; path = Sources/SilentCondition.swift; sourceTree = "<group>"; };
+		982C7488AFC394159882723D56BDE735 /* Repeat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Repeat.swift; path = Sources/Repeat.swift; sourceTree = "<group>"; };
+		9AFB004D1C1CD3D7BD43C727B7F07CCF /* Pods-LDSAuthentication-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LDSAuthentication-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A113F8A99398239FC30EC02A653A9084 /* Retry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Retry.swift; path = Sources/Retry.swift; sourceTree = "<group>"; };
+		A16996210FC3C2D1189F4AFDC1CAEC7E /* LocksmithAccessibleOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocksmithAccessibleOption.swift; path = Source/LocksmithAccessibleOption.swift; sourceTree = "<group>"; };
+		A4D8246831A2E2660468B48D011CCF69 /* Support.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Support.swift; path = Sources/Support.swift; sourceTree = "<group>"; };
+		A69474B42E48A13EBEB7A91132772485 /* NoFailedDependenciesCondition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NoFailedDependenciesCondition.swift; path = Sources/NoFailedDependenciesCondition.swift; sourceTree = "<group>"; };
+		A832FA82E6A0B5AB1D1CA20E335E3076 /* Pods-LDSAuthentication-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LDSAuthentication-dummy.m"; sourceTree = "<group>"; };
+		AB0F6A4CD2BA8DA42BF32034DD538E76 /* Pods-LDSAuthentication-LDSAuthenticationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LDSAuthentication-LDSAuthenticationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AB45DA8868A7B3DE0A66A2DD4199036B /* ProcedureProcotol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProcedureProcotol.swift; path = Sources/ProcedureProcotol.swift; sourceTree = "<group>"; };
+		AC2E84647E56674FD6A221C44B52D4BD /* BlockObservers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockObservers.swift; path = Sources/BlockObservers.swift; sourceTree = "<group>"; };
+		ACB8906062D902133B818915E3D5E3BF /* Locksmith.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Locksmith.modulemap; sourceTree = "<group>"; };
+		AF2D5259B1DEF57632F0298A2637E1B1 /* Pods-LDSAuthentication-LDSAuthenticationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LDSAuthentication-LDSAuthenticationDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		AF7C0356B44E36DD557EC21D2A78FDFF /* LocksmithError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocksmithError.swift; path = Source/LocksmithError.swift; sourceTree = "<group>"; };
+		B0A067B6FED152EDBC9D32E9F58A98ED /* Pods-LDSAuthentication-LDSAuthenticationDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LDSAuthentication-LDSAuthenticationDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B3B010664398C05AAAC8FB66AC992E54 /* Pods-LDSAuthentication-LDSAuthenticationTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LDSAuthentication-LDSAuthenticationTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B789AE63B2233D830AED55793A66F252 /* Locksmith.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Locksmith.h; path = Source/Locksmith.h; sourceTree = "<group>"; };
+		C085E02FF89804F50ADDA04F5A586E94 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		C3931ED147980216232D314714FE7A4F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6EEACE78EE33D3E64E986896D0F6F60 /* Pods-LDSAuthentication-LDSAuthenticationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LDSAuthentication-LDSAuthenticationTests.release.xcconfig"; sourceTree = "<group>"; };
+		C864513897767DC51438F0FA553DE284 /* Locksmith-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Locksmith-umbrella.h"; sourceTree = "<group>"; };
+		CFA0C6A8CBCEA08A034C41C4D420A5F2 /* Pods-LDSAuthentication-LDSAuthenticationTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LDSAuthentication-LDSAuthenticationTests-dummy.m"; sourceTree = "<group>"; };
+		D2D480DF10035857B3808DA712D46581 /* TimeoutObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeoutObserver.swift; path = Sources/TimeoutObserver.swift; sourceTree = "<group>"; };
+		D570D6AD3E9349A640A02ECBE9737453 /* LocksmithInternetProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocksmithInternetProtocol.swift; path = Source/LocksmithInternetProtocol.swift; sourceTree = "<group>"; };
+		D6B9B1DC2C817C17419D409C624EB1FF /* Logging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logging.swift; path = Sources/Logging.swift; sourceTree = "<group>"; };
+		E1EC9CCAFBFBA3D629319DE52F5B6036 /* Pods-LDSAuthentication-LDSAuthenticationDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LDSAuthentication-LDSAuthenticationDemo-frameworks.sh"; sourceTree = "<group>"; };
+		E7D94AE8DB06BE8E0938ADD1268416EE /* Locksmith-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Locksmith-prefix.pch"; sourceTree = "<group>"; };
+		EC3550F7D87EB292ED06D8D77492A68A /* ProcedureKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ProcedureKit.modulemap; sourceTree = "<group>"; };
+		EE5039B1F0723A15F42E195A1E6BCE83 /* Locksmith.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Locksmith.framework; path = Locksmith.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE7B3B3EC787F5C3A25FFCB1A4AA34EF /* NegatedCondition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NegatedCondition.swift; path = Sources/NegatedCondition.swift; sourceTree = "<group>"; };
+		F422CB4B9F9BE9A59F93EB5B1022F3CF /* Pods_LDSAuthentication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LDSAuthentication.framework; path = "Pods-LDSAuthentication.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8582D7312DF85B0DE8E2BE08E72ED97 /* LocksmithSecurityClass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocksmithSecurityClass.swift; path = Source/LocksmithSecurityClass.swift; sourceTree = "<group>"; };
+		F8794ED0B834E9B6D360EB323D1D55DE /* Pods-LDSAuthentication-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LDSAuthentication-umbrella.h"; sourceTree = "<group>"; };
+		F8E980BE7D8518D3402FE97D4627FB02 /* Pods-LDSAuthentication-LDSAuthenticationTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LDSAuthentication-LDSAuthenticationTests-frameworks.sh"; sourceTree = "<group>"; };
+		FD2545F5DDF69CCF56FFD0205C44E662 /* ProcedureKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ProcedureKit-dummy.m"; sourceTree = "<group>"; };
+		FDDA8523FA564524D95DE7971C95F8E0 /* ProcedureKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ProcedureKit-prefix.pch"; sourceTree = "<group>"; };
+		FE9AE1A5CCB973219978DA5B5C732F5F /* Group.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Group.swift; path = Sources/Group.swift; sourceTree = "<group>"; };
+		FEA3BCF4C8F53D41A49C45FC78CF701A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C6607F52C67EDB0933C384E519FAB8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				106B0ECDDBB11AAFFAEE2EE2A10E888B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE8F1959571C9FEC3234B1882B80E336 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				897DB1AA7832CCF9FD7D3B6E5B3354B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D955B9ADF1DDD08DF5A71454B0E4EBAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46F0C1A4D462EB6CB336573EA976FD66 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE23ABFDEA2F6A85A5CA8B3557C0B77A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CC4A8C096A3901A7EBD2B59A0F3B443 /* Foundation.framework in Frameworks */,
+				ACDE90DC6E9F939AA6745DB264EEAF07 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F49748EF94BDB920D0A4F1B540086637 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17E6ACB1E8136789999C53B146EC06DE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06A771E7EDF4024DB309479A620F427B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0AF921EA3087782965C05F1CE4644610 /* Info.plist */,
+				EC3550F7D87EB292ED06D8D77492A68A /* ProcedureKit.modulemap */,
+				7F512FC0B124CE65AD53B13EE037FA6E /* ProcedureKit.xcconfig */,
+				FD2545F5DDF69CCF56FFD0205C44E662 /* ProcedureKit-dummy.m */,
+				FDDA8523FA564524D95DE7971C95F8E0 /* ProcedureKit-prefix.pch */,
+				851A5287BA7782AEE649E209F066726D /* ProcedureKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ProcedureKit";
+			sourceTree = "<group>";
+		};
+		07C4C7059A22F7C4F38802A1CAC8DA4D /* Locksmith */ = {
+			isa = PBXGroup;
+			children = (
+				43D719E7E3311208B2CD5C3FE0A5767C /* Dictionary_Initializers.swift */,
+				B789AE63B2233D830AED55793A66F252 /* Locksmith.h */,
+				61FC52A3B670DAA0B5CB665D3B4E82A3 /* Locksmith.swift */,
+				A16996210FC3C2D1189F4AFDC1CAEC7E /* LocksmithAccessibleOption.swift */,
+				AF7C0356B44E36DD557EC21D2A78FDFF /* LocksmithError.swift */,
+				531B6EB5FD59E1AF94F840A94524BDDA /* LocksmithInternetAuthenticationType.swift */,
+				D570D6AD3E9349A640A02ECBE9737453 /* LocksmithInternetProtocol.swift */,
+				F8582D7312DF85B0DE8E2BE08E72ED97 /* LocksmithSecurityClass.swift */,
+				66E4D843D1BCEF32F6BC7337847766EB /* Support Files */,
+			);
+			name = Locksmith;
+			path = Locksmith;
+			sourceTree = "<group>";
+		};
+		16AA01E9369A2A73BFC6B6BD4F990D8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE5039B1F0723A15F42E195A1E6BCE83 /* Locksmith.framework */,
+				F422CB4B9F9BE9A59F93EB5B1022F3CF /* Pods_LDSAuthentication.framework */,
+				54EAF14EEC6A6049F7F3A1296F8B5472 /* Pods_LDSAuthentication_LDSAuthenticationDemo.framework */,
+				4F8CDC9BCE0453F380DD8A96EC3ADED1 /* Pods_LDSAuthentication_LDSAuthenticationTests.framework */,
+				3C46CE488271EDA16D568492AFC437A0 /* ProcedureKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B61E5A369670D8AB6BE3EC06BCBBD5B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07C4C7059A22F7C4F38802A1CAC8DA4D /* Locksmith */,
+				85E0ECF29DA7FF6A2EA847284FF91361 /* ProcedureKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		342AE51D12DE14E861CDD79D3849B8B6 /* Pods-LDSAuthentication-LDSAuthenticationTests */ = {
+			isa = PBXGroup;
+			children = (
+				54E7B18BC012A49D944BB8D48EADBF13 /* Info.plist */,
+				1FB2FB877DE227F2DE976ABA1741C13A /* Pods-LDSAuthentication-LDSAuthenticationTests.modulemap */,
+				27F101EF9088FF0ED8D5507D9652E69B /* Pods-LDSAuthentication-LDSAuthenticationTests-acknowledgements.markdown */,
+				B3B010664398C05AAAC8FB66AC992E54 /* Pods-LDSAuthentication-LDSAuthenticationTests-acknowledgements.plist */,
+				CFA0C6A8CBCEA08A034C41C4D420A5F2 /* Pods-LDSAuthentication-LDSAuthenticationTests-dummy.m */,
+				F8E980BE7D8518D3402FE97D4627FB02 /* Pods-LDSAuthentication-LDSAuthenticationTests-frameworks.sh */,
+				8765F16D05345EE84F25B4EBDC7FBA0E /* Pods-LDSAuthentication-LDSAuthenticationTests-resources.sh */,
+				3002E4E4DEEF1D78F62013DCB386E152 /* Pods-LDSAuthentication-LDSAuthenticationTests-umbrella.h */,
+				AB0F6A4CD2BA8DA42BF32034DD538E76 /* Pods-LDSAuthentication-LDSAuthenticationTests.debug.xcconfig */,
+				C6EEACE78EE33D3E64E986896D0F6F60 /* Pods-LDSAuthentication-LDSAuthenticationTests.release.xcconfig */,
+			);
+			name = "Pods-LDSAuthentication-LDSAuthenticationTests";
+			path = "Target Support Files/Pods-LDSAuthentication-LDSAuthenticationTests";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F990579C2E52276FD3C28227B49D60B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F990579C2E52276FD3C28227B49D60B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */,
+				C085E02FF89804F50ADDA04F5A586E94 /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		62618E42BFC5A4ACEB64D04DAF65C523 /* Pods-LDSAuthentication */ = {
+			isa = PBXGroup;
+			children = (
+				0FDCB0774A79B63DCA7C4AD7CC7C077B /* Info.plist */,
+				96CAA437A87DE3CB98C9D359DC53276A /* Pods-LDSAuthentication.modulemap */,
+				9AFB004D1C1CD3D7BD43C727B7F07CCF /* Pods-LDSAuthentication-acknowledgements.markdown */,
+				7401E183C5E878350DDF8AB00D2B7056 /* Pods-LDSAuthentication-acknowledgements.plist */,
+				A832FA82E6A0B5AB1D1CA20E335E3076 /* Pods-LDSAuthentication-dummy.m */,
+				35A41B88EC348D71BED43227DDD58C76 /* Pods-LDSAuthentication-resources.sh */,
+				F8794ED0B834E9B6D360EB323D1D55DE /* Pods-LDSAuthentication-umbrella.h */,
+				2C2F662DC1AC64E59AB29F291A4F26AE /* Pods-LDSAuthentication.debug.xcconfig */,
+				4C74E834E1D67EAFFE7A3FE60D1CC46B /* Pods-LDSAuthentication.release.xcconfig */,
+			);
+			name = "Pods-LDSAuthentication";
+			path = "Target Support Files/Pods-LDSAuthentication";
+			sourceTree = "<group>";
+		};
+		649F7DB809BB5ED922EE7119131C21EA /* Standard */ = {
+			isa = PBXGroup;
+			children = (
+				710E9EE643D3C198B197362292ED85C6 /* Any.swift */,
+				421C943FEBDC5A4630C8CD97131B9CE5 /* AnyObserver.swift */,
+				571F71F3AFDBE6A537363B2AF5F040EF /* Block.swift */,
+				13642203300B867DEBC8A79509DB54ED /* BlockCondition.swift */,
+				AC2E84647E56674FD6A221C44B52D4BD /* BlockObservers.swift */,
+				489E04C59897F4447AAE7CCDA46F9249 /* Capability.swift */,
+				13B13E0C66017CC18C12CC74DC7054DD /* Collection+ProcedureKit.swift */,
+				616D34DBAB4E7AFD0658B22CC9EA283E /* Composed.swift */,
+				7DF3506A624E201D1315D2E717C0989E /* Condition.swift */,
+				52352209DB8DA3288AF6077AA0A70173 /* Delay.swift */,
+				7D47543FF04B767055F683CAE898AC43 /* DispatchQueue+ProcedureKit.swift */,
+				4ACFB3107A4AC6C81433153F45AC1A97 /* Errors.swift */,
+				4475517DA29BBCAB860CD535251AF951 /* Filter.swift */,
+				FE9AE1A5CCB973219978DA5B5C732F5F /* Group.swift */,
+				17D1B380CF09EA7C929BCBEC9EBC4B3F /* Identity.swift */,
+				D6B9B1DC2C817C17419D409C624EB1FF /* Logging.swift */,
+				1219745321909513E3D009F61CC43DEA /* Map.swift */,
+				1C7A4D2E9BCAC3F3002EC631E19ADE6B /* MutualExclusion.swift */,
+				EE7B3B3EC787F5C3A25FFCB1A4AA34EF /* NegatedCondition.swift */,
+				A69474B42E48A13EBEB7A91132772485 /* NoFailedDependenciesCondition.swift */,
+				1A0ED0C914452E1D7443D8FAB7F83150 /* Operation+ProcedureKit.swift */,
+				4934E85B0A9E5CC34D30CC613FB3107D /* Procedure.swift */,
+				823240300F0F80A2FE7E4EBD98009315 /* ProcedureObserver.swift */,
+				AB45DA8868A7B3DE0A66A2DD4199036B /* ProcedureProcotol.swift */,
+				1A73EB3E8AF0C92DB8F2E5BD377C28CF /* ProcedureQueue.swift */,
+				4353D9896F204971F7E0C00E04E86C2B /* Reduce.swift */,
+				982C7488AFC394159882723D56BDE735 /* Repeat.swift */,
+				6B6654EC2DC455DD77701F895D742658 /* ResultInjection.swift */,
+				A113F8A99398239FC30EC02A653A9084 /* Retry.swift */,
+				97B30F26E4569EF4336E3034FD60D3B9 /* SilentCondition.swift */,
+				A4D8246831A2E2660468B48D011CCF69 /* Support.swift */,
+				D2D480DF10035857B3808DA712D46581 /* TimeoutObserver.swift */,
+				248AB2DAB0313436F5A976133FCA148D /* Transform.swift */,
+			);
+			name = Standard;
+			sourceTree = "<group>";
+		};
+		66E4D843D1BCEF32F6BC7337847766EB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEA3BCF4C8F53D41A49C45FC78CF701A /* Info.plist */,
+				ACB8906062D902133B818915E3D5E3BF /* Locksmith.modulemap */,
+				1545D6CB8390DB972C1600C28F021F1E /* Locksmith.xcconfig */,
+				3FFBF58D87F447C8C8A593998AA9AAAB /* Locksmith-dummy.m */,
+				E7D94AE8DB06BE8E0938ADD1268416EE /* Locksmith-prefix.pch */,
+				C864513897767DC51438F0FA553DE284 /* Locksmith-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Locksmith";
+			sourceTree = "<group>";
+		};
+		6B3A18F4F56C12EEBEB67733DFF7AF40 /* Pods-LDSAuthentication-LDSAuthenticationDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C3931ED147980216232D314714FE7A4F /* Info.plist */,
+				25FA19BC1006005F87B5CA59B9853409 /* Pods-LDSAuthentication-LDSAuthenticationDemo.modulemap */,
+				B0A067B6FED152EDBC9D32E9F58A98ED /* Pods-LDSAuthentication-LDSAuthenticationDemo-acknowledgements.markdown */,
+				0076C3C17978A391F836C4BC047CDD8F /* Pods-LDSAuthentication-LDSAuthenticationDemo-acknowledgements.plist */,
+				81129E6553FBC2B26D4F85ADA31C2538 /* Pods-LDSAuthentication-LDSAuthenticationDemo-dummy.m */,
+				E1EC9CCAFBFBA3D629319DE52F5B6036 /* Pods-LDSAuthentication-LDSAuthenticationDemo-frameworks.sh */,
+				321B79B8203E8E0612B1FC23E3E4E22A /* Pods-LDSAuthentication-LDSAuthenticationDemo-resources.sh */,
+				517BB393D518D6A3D7DEB56B0EC0F03D /* Pods-LDSAuthentication-LDSAuthenticationDemo-umbrella.h */,
+				AF2D5259B1DEF57632F0298A2637E1B1 /* Pods-LDSAuthentication-LDSAuthenticationDemo.debug.xcconfig */,
+				4CFA3051CFCBF683A25A5B236BBE7139 /* Pods-LDSAuthentication-LDSAuthenticationDemo.release.xcconfig */,
+			);
+			name = "Pods-LDSAuthentication-LDSAuthenticationDemo";
+			path = "Target Support Files/Pods-LDSAuthentication-LDSAuthenticationDemo";
+			sourceTree = "<group>";
+		};
+		6F954717401FBF472C233473382271D5 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				62618E42BFC5A4ACEB64D04DAF65C523 /* Pods-LDSAuthentication */,
+				6B3A18F4F56C12EEBEB67733DFF7AF40 /* Pods-LDSAuthentication-LDSAuthenticationDemo */,
+				342AE51D12DE14E861CDD79D3849B8B6 /* Pods-LDSAuthentication-LDSAuthenticationTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				2B61E5A369670D8AB6BE3EC06BCBBD5B /* Pods */,
+				16AA01E9369A2A73BFC6B6BD4F990D8D /* Products */,
+				6F954717401FBF472C233473382271D5 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		85E0ECF29DA7FF6A2EA847284FF91361 /* ProcedureKit */ = {
+			isa = PBXGroup;
+			children = (
+				649F7DB809BB5ED922EE7119131C21EA /* Standard */,
+				06A771E7EDF4024DB309479A620F427B /* Support Files */,
+			);
+			name = ProcedureKit;
+			path = ProcedureKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1A0ACE896EF7CED109A65A02E6139AFE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29D0F4025D300C1EE8DA5E24A9DC5EB5 /* Pods-LDSAuthentication-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88FC39B679BAF3429F22F56B31548D35 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA6F2D640A2B5BA821E20584EC6B6714 /* Pods-LDSAuthentication-LDSAuthenticationDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EFFEC64A8CBEEE03609495954A0893E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D31B5A465CFA2900FDE6783C9EE7B202 /* Pods-LDSAuthentication-LDSAuthenticationTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7CE5A9279112FAB14126410B4090631 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78B2338EFDF22FFA6575BA90469BEB29 /* Locksmith-umbrella.h in Headers */,
+				8FA9B26AA518B65A03682A1781E2B4D1 /* Locksmith.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDAF4E57040578000E05626169F7FCFD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A18AE56C3BEDCD130DDEFC2AE7517BE /* ProcedureKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0A45B16002F57F2257688086403F14A8 /* Pods-LDSAuthentication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 039BEC750E25F99158D8AB37EC494881 /* Build configuration list for PBXNativeTarget "Pods-LDSAuthentication" */;
+			buildPhases = (
+				FE7A01B603D383287ED97A71B7EEC84A /* Sources */,
+				BE8F1959571C9FEC3234B1882B80E336 /* Frameworks */,
+				1A0ACE896EF7CED109A65A02E6139AFE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE317BC89FA2DB5548FC46833A08BE78 /* PBXTargetDependency */,
+				E1A887C2933B228AFE4C9A289C8B3F0E /* PBXTargetDependency */,
+			);
+			name = "Pods-LDSAuthentication";
+			productName = "Pods-LDSAuthentication";
+			productReference = F422CB4B9F9BE9A59F93EB5B1022F3CF /* Pods_LDSAuthentication.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		973C7F286AF8B52DD1F76478FF6E1E96 /* Pods-LDSAuthentication-LDSAuthenticationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BF545361BBDCE0BA6DDCFEF539ED54A /* Build configuration list for PBXNativeTarget "Pods-LDSAuthentication-LDSAuthenticationTests" */;
+			buildPhases = (
+				EB3EF9620E192D3E42E1E679F0219F9D /* Sources */,
+				D955B9ADF1DDD08DF5A71454B0E4EBAF /* Frameworks */,
+				8EFFEC64A8CBEEE03609495954A0893E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7F94AFD2AA04E96DAB861839E627C74 /* PBXTargetDependency */,
+				9F68157FFC57BC9A1A2AA4DD7D8D8070 /* PBXTargetDependency */,
+			);
+			name = "Pods-LDSAuthentication-LDSAuthenticationTests";
+			productName = "Pods-LDSAuthentication-LDSAuthenticationTests";
+			productReference = 4F8CDC9BCE0453F380DD8A96EC3ADED1 /* Pods_LDSAuthentication_LDSAuthenticationTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BA2A1A122B7881B39A494156C5713589 /* ProcedureKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9404A8DD28AD16391FF226761D09AA40 /* Build configuration list for PBXNativeTarget "ProcedureKit" */;
+			buildPhases = (
+				FECCB38FDE55E3C9D360ACC196EE97F1 /* Sources */,
+				F49748EF94BDB920D0A4F1B540086637 /* Frameworks */,
+				EDAF4E57040578000E05626169F7FCFD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProcedureKit;
+			productName = ProcedureKit;
+			productReference = 3C46CE488271EDA16D568492AFC437A0 /* ProcedureKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C7F727D48928BF47D913AFC48BB6A978 /* Locksmith */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 294A9EF2E0B6D19A24BE6E3D9E5072E1 /* Build configuration list for PBXNativeTarget "Locksmith" */;
+			buildPhases = (
+				890E4BABED82AB6D5F577BA651D79FD6 /* Sources */,
+				DE23ABFDEA2F6A85A5CA8B3557C0B77A /* Frameworks */,
+				D7CE5A9279112FAB14126410B4090631 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Locksmith;
+			productName = Locksmith;
+			productReference = EE5039B1F0723A15F42E195A1E6BCE83 /* Locksmith.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FBD2698131FC2AF6873E8B85D8A38BB3 /* Pods-LDSAuthentication-LDSAuthenticationDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C31C17558708E42F8D5557FB6CB8DD17 /* Build configuration list for PBXNativeTarget "Pods-LDSAuthentication-LDSAuthenticationDemo" */;
+			buildPhases = (
+				FB84A053CA25207FFAA86894AC4C5FBB /* Sources */,
+				3C6607F52C67EDB0933C384E519FAB8E /* Frameworks */,
+				88FC39B679BAF3429F22F56B31548D35 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DBE4BECD6337AD5719685E6729C09A7 /* PBXTargetDependency */,
+				576F969BB352E6D2FFC2C6C70508BA62 /* PBXTargetDependency */,
+			);
+			name = "Pods-LDSAuthentication-LDSAuthenticationDemo";
+			productName = "Pods-LDSAuthentication-LDSAuthenticationDemo";
+			productReference = 54EAF14EEC6A6049F7F3A1296F8B5472 /* Pods_LDSAuthentication_LDSAuthenticationDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 16AA01E9369A2A73BFC6B6BD4F990D8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7F727D48928BF47D913AFC48BB6A978 /* Locksmith */,
+				0A45B16002F57F2257688086403F14A8 /* Pods-LDSAuthentication */,
+				FBD2698131FC2AF6873E8B85D8A38BB3 /* Pods-LDSAuthentication-LDSAuthenticationDemo */,
+				973C7F286AF8B52DD1F76478FF6E1E96 /* Pods-LDSAuthentication-LDSAuthenticationTests */,
+				BA2A1A122B7881B39A494156C5713589 /* ProcedureKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		890E4BABED82AB6D5F577BA651D79FD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				006E33F2D4BBF271402C802F0EED9A32 /* Dictionary_Initializers.swift in Sources */,
+				B875F14E78DB15D8C4D65BB69E55BA04 /* Locksmith-dummy.m in Sources */,
+				27D889D317A485E463FE504E54F451FF /* Locksmith.swift in Sources */,
+				1F0855EF3FCF0EFE13C50CA329A2156B /* LocksmithAccessibleOption.swift in Sources */,
+				8D3BB10C30B780347AAB0ECB7895FF2F /* LocksmithError.swift in Sources */,
+				91AD45B427E4480C4D958A58666D789E /* LocksmithInternetAuthenticationType.swift in Sources */,
+				CAA418DF1176F5AA55E12FBAB8860CED /* LocksmithInternetProtocol.swift in Sources */,
+				7FBDA22BC8E282470B033630D9E5210F /* LocksmithSecurityClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB3EF9620E192D3E42E1E679F0219F9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD1BB106BB2A88A02AEA84D301BA0D7E /* Pods-LDSAuthentication-LDSAuthenticationTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB84A053CA25207FFAA86894AC4C5FBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFAE6DB61E45E8FC2B503E5185E8364C /* Pods-LDSAuthentication-LDSAuthenticationDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE7A01B603D383287ED97A71B7EEC84A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6F2A81BC44F3BEA1BC92C9A47EFF4A1 /* Pods-LDSAuthentication-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FECCB38FDE55E3C9D360ACC196EE97F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29155783B26F5EE0ADC286881993F752 /* Any.swift in Sources */,
+				17DA94842A64017B7023B4ADF333D042 /* AnyObserver.swift in Sources */,
+				254964D8C06D019093297E0CABE8DBF3 /* Block.swift in Sources */,
+				6140CC269F4EEEA4B98EB4E17C675751 /* BlockCondition.swift in Sources */,
+				CD5E2C36D46C8A2079A2833DABE48A23 /* BlockObservers.swift in Sources */,
+				E1C10901A24F99C4C32D52C9184A211B /* Capability.swift in Sources */,
+				B702E6C018A83606D7938916C8FEE794 /* Collection+ProcedureKit.swift in Sources */,
+				8343583754E1C02D7713C2D069CC4CDA /* Composed.swift in Sources */,
+				880DCCEA2853583F85F31137EB54DFA6 /* Condition.swift in Sources */,
+				0438E33560D691103963318F98F02BCA /* Delay.swift in Sources */,
+				2D1FC944D503C6DAA12DD3F11AC0A9CC /* DispatchQueue+ProcedureKit.swift in Sources */,
+				5839665813229153C1352C9DD41F57C2 /* Errors.swift in Sources */,
+				80DC0F5540DDB561E534D6FF4D74204C /* Filter.swift in Sources */,
+				7080F8EA8DA2DA0AB5195FFF4ABB63D7 /* Group.swift in Sources */,
+				5577623B238FB92B26E93DB6F86A4047 /* Identity.swift in Sources */,
+				38B435EC63B204A1CDEEC7387784F0B7 /* Logging.swift in Sources */,
+				03C3DEC60013579981EBACAA2E2F4AE7 /* Map.swift in Sources */,
+				7ECE496DF5E580B1107C8B1CA004D5F4 /* MutualExclusion.swift in Sources */,
+				6B5AD3B76B46F59C4A6025C75B0DDF02 /* NegatedCondition.swift in Sources */,
+				FAFD1ED6BD639FA87994B15A6A4896F3 /* NoFailedDependenciesCondition.swift in Sources */,
+				F3329AD58B119537898F9C77DB243417 /* Operation+ProcedureKit.swift in Sources */,
+				06F9C5765659D1CED6C2C2A9920BCA0B /* Procedure.swift in Sources */,
+				8EB8A625133C93559081A6921537C3BE /* ProcedureKit-dummy.m in Sources */,
+				D421E7A80EFE5ACE15FE53C58A2A1F98 /* ProcedureObserver.swift in Sources */,
+				32E2BD113DF1D266C91A8F98707FC846 /* ProcedureProcotol.swift in Sources */,
+				87866619914ED78E31B92C81C6F2E306 /* ProcedureQueue.swift in Sources */,
+				9E82A605980868A5CFEE10C7771932FC /* Reduce.swift in Sources */,
+				A52A22E60D090C080A1E652F3C8B2503 /* Repeat.swift in Sources */,
+				A01159AB2FD5C79906F7D902AA599BC8 /* ResultInjection.swift in Sources */,
+				D7D6A7E4539A81FD1F54FCAD3C7464A1 /* Retry.swift in Sources */,
+				37708F1595CDF3FBBBBA3F85C0966E5F /* SilentCondition.swift in Sources */,
+				A6739D6E2FD6A0E6165254AD2D424B37 /* Support.swift in Sources */,
+				0F194A55EE4CA4B5BF8F260F645B3080 /* TimeoutObserver.swift in Sources */,
+				10C4523484A3BEDF9E8A158C3B77CB90 /* Transform.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1DBE4BECD6337AD5719685E6729C09A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Locksmith;
+			target = C7F727D48928BF47D913AFC48BB6A978 /* Locksmith */;
+			targetProxy = 89AC840ABEC2A2C9B2FFF871EC829963 /* PBXContainerItemProxy */;
+		};
+		576F969BB352E6D2FFC2C6C70508BA62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ProcedureKit;
+			target = BA2A1A122B7881B39A494156C5713589 /* ProcedureKit */;
+			targetProxy = BE75D57F607979F5A702E65F8266E5C9 /* PBXContainerItemProxy */;
+		};
+		9F68157FFC57BC9A1A2AA4DD7D8D8070 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ProcedureKit;
+			target = BA2A1A122B7881B39A494156C5713589 /* ProcedureKit */;
+			targetProxy = EB7DFB6C0E991862A8BD5DC9D878E2BD /* PBXContainerItemProxy */;
+		};
+		AE317BC89FA2DB5548FC46833A08BE78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Locksmith;
+			target = C7F727D48928BF47D913AFC48BB6A978 /* Locksmith */;
+			targetProxy = 14166B1B8557F522E47441E0F24FF84D /* PBXContainerItemProxy */;
+		};
+		C7F94AFD2AA04E96DAB861839E627C74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Locksmith;
+			target = C7F727D48928BF47D913AFC48BB6A978 /* Locksmith */;
+			targetProxy = 137651A57C830D49375AF2C1A7621346 /* PBXContainerItemProxy */;
+		};
+		E1A887C2933B228AFE4C9A289C8B3F0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ProcedureKit;
+			target = BA2A1A122B7881B39A494156C5713589 /* ProcedureKit */;
+			targetProxy = FD2285D4ADC900792F96E048A623CC00 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		21F16739010138C20EB07C8D7B7597A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1545D6CB8390DB972C1600C28F021F1E /* Locksmith.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Locksmith/Locksmith-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Locksmith/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Locksmith/Locksmith.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Locksmith;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		29F4D246150812B38C29D157AB2457A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF2D5259B1DEF57632F0298A2637E1B1 /* Pods-LDSAuthentication-LDSAuthenticationDemo.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LDSAuthentication-LDSAuthenticationDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LDSAuthentication-LDSAuthenticationDemo/Pods-LDSAuthentication-LDSAuthenticationDemo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LDSAuthentication_LDSAuthenticationDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2F813F0B2CB41BC0238F114941FA630D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB0F6A4CD2BA8DA42BF32034DD538E76 /* Pods-LDSAuthentication-LDSAuthenticationTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LDSAuthentication-LDSAuthenticationTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LDSAuthentication-LDSAuthenticationTests/Pods-LDSAuthentication-LDSAuthenticationTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LDSAuthentication_LDSAuthenticationTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3A2F9EB2FE5EB94FCDBBA8517C94EDC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F512FC0B124CE65AD53B13EE037FA6E /* ProcedureKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ProcedureKit/ProcedureKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ProcedureKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ProcedureKit/ProcedureKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ProcedureKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		47D0774124EFCF43BEA770596A50397D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F512FC0B124CE65AD53B13EE037FA6E /* ProcedureKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ProcedureKit/ProcedureKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ProcedureKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ProcedureKit/ProcedureKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ProcedureKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4A9E104BC393A1F39D79942CE89B37BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C74E834E1D67EAFFE7A3FE60D1CC46B /* Pods-LDSAuthentication.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LDSAuthentication/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LDSAuthentication/Pods-LDSAuthentication.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LDSAuthentication;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4E487F173E6C9664F4E9E26B9635D23C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		65749377E45AFD0DF493AB418AB8E762 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6EEACE78EE33D3E64E986896D0F6F60 /* Pods-LDSAuthentication-LDSAuthenticationTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LDSAuthentication-LDSAuthenticationTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LDSAuthentication-LDSAuthenticationTests/Pods-LDSAuthentication-LDSAuthenticationTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LDSAuthentication_LDSAuthenticationTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6F2C5065911388D80102F4EFBA383E7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CFA3051CFCBF683A25A5B236BBE7139 /* Pods-LDSAuthentication-LDSAuthenticationDemo.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LDSAuthentication-LDSAuthenticationDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LDSAuthentication-LDSAuthenticationDemo/Pods-LDSAuthentication-LDSAuthenticationDemo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LDSAuthentication_LDSAuthenticationDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		83CEBEEF995D908B80CF35A6F82B918D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1545D6CB8390DB972C1600C28F021F1E /* Locksmith.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Locksmith/Locksmith-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Locksmith/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Locksmith/Locksmith.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Locksmith;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BDD0139D6EB93FA375F887ABD62DAB2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAD310B70DE6EC7F076B4BBDAEC845FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C2F662DC1AC64E59AB29F291A4F26AE /* Pods-LDSAuthentication.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LDSAuthentication/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LDSAuthentication/Pods-LDSAuthentication.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LDSAuthentication;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		039BEC750E25F99158D8AB37EC494881 /* Build configuration list for PBXNativeTarget "Pods-LDSAuthentication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD310B70DE6EC7F076B4BBDAEC845FE /* Debug */,
+				4A9E104BC393A1F39D79942CE89B37BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		294A9EF2E0B6D19A24BE6E3D9E5072E1 /* Build configuration list for PBXNativeTarget "Locksmith" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CEBEEF995D908B80CF35A6F82B918D /* Debug */,
+				21F16739010138C20EB07C8D7B7597A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BF545361BBDCE0BA6DDCFEF539ED54A /* Build configuration list for PBXNativeTarget "Pods-LDSAuthentication-LDSAuthenticationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F813F0B2CB41BC0238F114941FA630D /* Debug */,
+				65749377E45AFD0DF493AB418AB8E762 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E487F173E6C9664F4E9E26B9635D23C /* Debug */,
+				BDD0139D6EB93FA375F887ABD62DAB2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9404A8DD28AD16391FF226761D09AA40 /* Build configuration list for PBXNativeTarget "ProcedureKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A2F9EB2FE5EB94FCDBBA8517C94EDC0 /* Debug */,
+				47D0774124EFCF43BEA770596A50397D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C31C17558708E42F8D5557FB6CB8DD17 /* Build configuration list for PBXNativeTarget "Pods-LDSAuthentication-LDSAuthenticationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29F4D246150812B38C29D157AB2457A6 /* Debug */,
+				6F2C5065911388D80102F4EFBA383E7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

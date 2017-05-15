@@ -1,0 +1,6 @@
+framework module Pods_LDSAuthentication_LDSAuthenticationTests {
+  umbrella header "Pods-LDSAuthentication-LDSAuthenticationTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
