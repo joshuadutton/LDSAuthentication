@@ -44,8 +44,6 @@ open class AuthenticatedSession: NSObject {
     
     public let userAgent: String
     public let clientVersion: String
-    public let clientUsername: String
-    public let clientPassword: String
     public let authenticationURL: URL?
     public let domain: String
     public let trustPolicy: TrustPolicy
@@ -59,13 +57,11 @@ open class AuthenticatedSession: NSObject {
     }
     
       /// Constructs a session.
-    public init(username: String, password: String, userAgent: String, clientVersion: String, clientUsername: String, clientPassword: String, authenticationURL: URL? = URL(string: "https://www.lds.org/login.html"), domain: String = "beta.lds.org", trustPolicy: TrustPolicy = .trust) {
+    public init(username: String, password: String, userAgent: String, clientVersion: String, authenticationURL: URL? = URL(string: "https://www.lds.org/login.html"), domain: String = "beta.lds.org", trustPolicy: TrustPolicy = .trust) {
         self.username = username
         self.password = password
         self.userAgent = userAgent
         self.clientVersion = clientVersion
-        self.clientUsername = clientUsername
-        self.clientPassword = clientPassword
         self.authenticationURL = authenticationURL
         self.domain = domain
         self.trustPolicy = trustPolicy
