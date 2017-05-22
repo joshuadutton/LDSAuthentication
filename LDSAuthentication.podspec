@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "LDSAuthentication"
-  s.version      = "1.1.0"
+  s.version      = "1.2.0"
   s.summary      = "Swift client library for LDS Account authentication."
   s.author       = 'Stephan Heilner'
   s.homepage     = "https://github.com/CrossWaterBridge/LDSAuthentication"
