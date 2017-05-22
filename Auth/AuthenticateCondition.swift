@@ -31,15 +31,14 @@ public class AuthenticateCondition: Condition {
         self.session = session
         super.init()
         name = "Authenticate"
-        mutuallyExclusive = true
-        addDependency(AuthenticateOperation(session: session))
+        produce(dependency: AuthenticateOperation(session: session))
     }
     
     public override func evaluate(procedure: Procedure, completion: @escaping (ConditionResult) -> Void) {
         if session.authenticated {
-            completion(.satisfied)
+            completion(.success(true))
         } else {
-            completion(.failed(AuthenticationError.errorWithCode(.unknown, failureReason: "Not authenticated")))
+            completion(.failure(AuthenticationError.errorWithCode(.unknown, failureReason: "Not authenticated")))
         }
     }
     

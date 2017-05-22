@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   
   s.subspec 'Auth' do |ss|
     ss.source_files = 'Auth/*.swift'
-    ss.dependency 'ProcedureKit', '4.0.0-beta.4'
+    ss.dependency 'ProcedureKit'
     ss.dependency 'Swiftification'
     ss.dependency 'LDSAuthentication/Keychain'
   end
