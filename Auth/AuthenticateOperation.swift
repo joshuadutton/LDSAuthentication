@@ -42,7 +42,9 @@ class AuthenticateOperation: Procedure {
         }
         
         guard let url = session.authenticationURL else {
-            finish(withError: AuthenticationError.errorWithCode(.unknown, failureReason: "Missing authentication URL"))
+            let error = AuthenticationError.errorWithCode(.unknown, failureReason: "Missing authentication URL")
+            ErrorLogger.logError(error)
+            finish(withError: error)
             return
         }
         
@@ -55,7 +57,9 @@ class AuthenticateOperation: Procedure {
             HTTPCookiePropertyKey.path : "/login.html",
             HTTPCookiePropertyKey.expires: Date(timeIntervalSinceNow: 60 * 60),
         ]) else {
-            finish(withError: AuthenticationError.errorWithCode(.unknown, failureReason: "Malformed authentication domain"))
+            let error = AuthenticationError.errorWithCode(.unknown, failureReason: "Malformed authentication domain")
+            ErrorLogger.logError(error)
+            finish(withError: error)
             return
         }
         request.allHTTPHeaderFields = HTTPCookie.requestHeaderFields(with: [cookie])
@@ -70,7 +74,9 @@ class AuthenticateOperation: Procedure {
         ].map({ key, value in
             return "\(key)=\(value.stringByAddingPercentEscapesForQueryValue()!)"
         }).joined(separator: "&").data(using: String.Encoding.utf8) else {
-            finish(withError: AuthenticationError.errorWithCode(.unknown, failureReason: "Malformed parameter"))
+            let error = AuthenticationError.errorWithCode(.unknown, failureReason: "Malformed parameter")
+            ErrorLogger.logError(error)
+            finish(withError: error)
             return
         }
         
@@ -82,12 +88,15 @@ class AuthenticateOperation: Procedure {
         let task = session.urlSession.dataTask(with: request, completionHandler: { data, response, error in
             self.session.networkActivityObservers.notify(.stop)
             if let error = error {
+                ErrorLogger.logError(error)
                 self.finish(withError: error)
                 return
             }
             
             guard let httpResponse = response as? HTTPURLResponse, let responseHeaderFields = httpResponse.allHeaderFields as? [String: String], let responseURL = httpResponse.url else {
-                self.finish(withError: AuthenticationError.errorWithCode(.unknown, failureReason: "Unexpected response"))
+                let error = AuthenticationError.errorWithCode(.unknown, failureReason: "Unexpected response")
+                ErrorLogger.logError(error)
+                self.finish(withError: error)
                 return
             }
             
@@ -106,16 +115,19 @@ class AuthenticateOperation: Procedure {
                 errorKey = "unknown"
             }
             
+            let error: Error
             switch errorKey {
             case "authfailed":
-                self.finish(withError: AuthenticationError.errorWithCode(.authenticationFailed, failureReason: "Incorrect username and/or password."))
+                error = AuthenticationError.errorWithCode(.authenticationFailed, failureReason: "Incorrect username and/or password.")
             case "lockout":
-                self.finish(withError: AuthenticationError.errorWithCode(.lockedOut, failureReason: "Account is locked."))
+                error = AuthenticationError.errorWithCode(.lockedOut, failureReason: "Account is locked.")
             case "pwdexpired":
-                self.finish(withError: AuthenticationError.errorWithCode(.passwordExpired, failureReason: "Password is expired."))
+                error = AuthenticationError.errorWithCode(.passwordExpired, failureReason: "Password is expired.")
             default:
-                self.finish(withError: AuthenticationError.errorWithCode(.unknown, failureReason: "Authentication failed for an unknown reason."))
+                error = AuthenticationError.errorWithCode(.unknown, failureReason: "Authentication failed for an unknown reason.")
             }
+            ErrorLogger.logError(error)
+            self.finish(withError: error)
         }) 
         session.networkActivityObservers.notify(.start)
         task.resume()
