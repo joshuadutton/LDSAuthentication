@@ -80,7 +80,7 @@ public class SharedKeychainController {
                     try Locksmith.deleteDataForUserAccount(userAccount: SharedKeychainController.userAccountName, inService: SharedKeychainController.serviceName)
                 }
             } catch {
-                print("Error setting keychain \(error)")
+                ErrorLogger.logError(error, description: "Error setting keychain")
             }
         }
     }
