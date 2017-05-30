@@ -43,7 +43,7 @@ class AuthenticateOperation: Procedure {
         
         guard let url = session.authenticationURL else {
             let error = AuthenticationError.errorWithCode(.unknown, failureReason: "Missing authentication URL")
-            ErrorLogger.logError(error)
+            Log.error(error)
             finish(withError: error)
             return
         }
@@ -58,7 +58,7 @@ class AuthenticateOperation: Procedure {
             HTTPCookiePropertyKey.expires: Date(timeIntervalSinceNow: 60 * 60),
         ]) else {
             let error = AuthenticationError.errorWithCode(.unknown, failureReason: "Malformed authentication domain")
-            ErrorLogger.logError(error)
+            Log.error(error)
             finish(withError: error)
             return
         }
@@ -75,7 +75,7 @@ class AuthenticateOperation: Procedure {
             return "\(key)=\(value.stringByAddingPercentEscapesForQueryValue()!)"
         }).joined(separator: "&").data(using: String.Encoding.utf8) else {
             let error = AuthenticationError.errorWithCode(.unknown, failureReason: "Malformed parameter")
-            ErrorLogger.logError(error)
+            Log.error(error)
             finish(withError: error)
             return
         }
@@ -88,14 +88,14 @@ class AuthenticateOperation: Procedure {
         let task = session.urlSession.dataTask(with: request, completionHandler: { data, response, error in
             self.session.networkActivityObservers.notify(.stop)
             if let error = error {
-                ErrorLogger.logError(error)
+                Log.error(error)
                 self.finish(withError: error)
                 return
             }
             
             guard let httpResponse = response as? HTTPURLResponse, let responseHeaderFields = httpResponse.allHeaderFields as? [String: String], let responseURL = httpResponse.url else {
                 let error = AuthenticationError.errorWithCode(.unknown, failureReason: "Unexpected response")
-                ErrorLogger.logError(error)
+                Log.error(error)
                 self.finish(withError: error)
                 return
             }
@@ -126,7 +126,7 @@ class AuthenticateOperation: Procedure {
             default:
                 error = AuthenticationError.errorWithCode(.unknown, failureReason: "Authentication failed for an unknown reason.")
             }
-            ErrorLogger.logError(error)
+            Log.error(error)
             self.finish(withError: error)
         }) 
         session.networkActivityObservers.notify(.start)
