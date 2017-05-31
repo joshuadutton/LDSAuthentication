@@ -12,12 +12,12 @@ Pod::Spec.new do |s|
   s.default_subspec = 'Auth'
 
   s.subspec 'Keychain' do |ss|
-    ss.source_files = 'Keychain/*.swift'
+    ss.source_files = 'Common/*.swift', 'Keychain/*.swift'
     ss.dependency 'Locksmith'
   end
   
   s.subspec 'Auth' do |ss|
-    ss.source_files = 'Auth/*.swift'
+    ss.source_files = 'Common/*.swift', 'Auth/*.swift'
     ss.dependency 'ProcedureKit'
     ss.dependency 'Swiftification'
     ss.dependency 'LDSAuthentication/Keychain'
